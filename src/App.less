@@ -1,0 +1,92 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less';
+@import './App-theme.less';
+@import 'tachyons';
+
+html,
+body {
+  margin: 0;
+  font-family: 'Century Gothic Bold', 'Century Gothic', 'YS', 'Helvetica Neue', 'YS', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+  'Fira Sans', 'Droid Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: #250B1A;
+  min-height: 100vh;
+  .gaming {
+    //cursor: url("./cursor.png"), pointer;
+    cursor: pointer;
+
+    .clickable:hover {
+      transform: scale(1.2);
+      transition: all 0.2s linear;
+    }
+
+    .clickable.adventure:hover {
+      transform: scale(1.05);
+    }
+
+    .clickable.dungeon:hover {
+      transform: scale(1.05);
+    }
+
+    .clickable:active {
+      transform: scale(0.7);
+      transition: all 0.4s linear;
+    }
+
+  }
+
+  .ant-modal {
+    padding-bottom: 0;
+  }
+
+  .ant-modal-close-x {
+    height: 36px;
+    width: 36px;
+    line-height: 40px;
+  }
+
+  .ant-modal-footer {
+    //border: solid 2px #FFFFFF;
+    //border-top: none;
+  }
+
+  .ant-modal-header, .ant-modal-title {
+    background-color: #FFFFFF;
+  }
+
+  .ant-modal-body {
+    //border: solid 2px #FFFFFF;
+    //border-bottom: none;
+
+    @media (max-width: 768px) {
+      margin-top: 5rem;
+      padding: 10px;
+    }
+  }
+
+  .ant-input {
+    color: #FFFFFF;
+  }
+
+
+  .ant-progress-text {
+    //display: inline-block;
+    //margin-left: 5px;
+  }
+
+  /*
+  span.ant-input-affix-wrapper{
+    background-color: rgba(91, 0, 44, 0.25);
+
+    .ant-input{
+      background-color: rgba(91, 0, 44, 0.25);
+    }
+  }
+  */
+
+  .ant-modal-content {
+    box-shadow: none;
+  }
+}

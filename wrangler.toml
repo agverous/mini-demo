@@ -1,0 +1,9 @@
+account_id="d5fd0bc421663cf338b910c018db5e17"
+name = "degen"
+type = "webpack"
+zone_id = '73cd6918deaa4f9d2f43c9de08609b4d'
+workers_dev = true
+
+[site]
+bucket = "./build"
+entry-point = "workers-site"
